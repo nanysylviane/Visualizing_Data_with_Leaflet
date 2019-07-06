@@ -1,6 +1,5 @@
 // Earthquake data link
-var EarthquakeLink = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
-// https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
+var EarthquakeLink = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
 // Tectonic plates link
 var TectonicPlatesLink = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
@@ -124,12 +123,12 @@ function createMap(earthquakes) {
   legend.addTo(myMap);
 }
 
-function getColor(a) {
-  return a > 5 ? '#F30' :
-  a > 4  ? '#a50f15' :
-  a > 3  ? '#de2d26' :
-  a > 2  ? '#fb6a4A' :
-  a > 1   ? '#fcae91' :
+function getColor(d) {
+  return d > 5 ? '#F30' :
+  d > 4  ? '#a50f15' :
+  d > 3  ? '#de2d26' :
+  d > 2  ? '#fb6a4A' :
+  d > 1   ? '#fcae91' :
             '#9fee5d9';
 }
 
