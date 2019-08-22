@@ -1,4 +1,7 @@
 # Visualizing_Data_with_Leaflet
+Our visualization is published at https://nanysylviane.github.io/Visualizing_Data_with_Leaflet/
+
+
  on issues facing our planet.
 
 ## Our Task
